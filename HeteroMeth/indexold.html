@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HeteroMeth-Home</title>
+<link rel="stylesheet" type="text/css" href="statics/indexstyle.css">
+<link rel="stylesheet" href="statics/style.css">
+<link rel="stylesheet" href="statics/prettify.css">
+<style>
+</style>
+
+<script type="text/javascript" src="statics/jquery-1.7.2.min.js"></script>
+<script language="javascript">
+$(function(){
+var heightLeft= $("#content_left").height();
+var heightRight= $("#content_right").height();
+if (heightLeft > heightRight)
+{
+$("#content_right").height(heightLeft);
+}
+})
+</script>
+</head>
+<body>
+<header>
+<div id="headercontainer"></div>
+<p id="description">A DataBase of cell-to-cell <strong><font color="#fdfd05"size="4">Hetero</font></strong>geneity in DNA <strong><font color="#fdfd05"size="4">Meth</font></strong>ylation</p>
+<p id="description_2"></p>
+</header>
+<section>
+  <div class="container">
+    <div id="head">
+      <h1></h1>
+      <!--  Figure move, i will consider if we need this or not -->
+      <ul id="menu">
+        <li>
+          <a class="current" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="SymbolSearch.php">Gene Search</a>
+        </li>
+        <li>
+          <a href="Browse.html">Genome Browser</a>
+        </li>
+        <li>
+          <a href="Download.php">Browse & Download</a>
+        </li>
+        <li>
+          <a href="Contact.php">Contact us</a>
+        </li>
+    </div>
+    <div id="area"></div>
+    <div id="main">
+      <div id="content_left">
+        <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='PctRTVsT2zf1KOB2dwGniVEcIEIV5JtC' /></div>
+        <h3 style="font-size:20px">About  HeteroMeth</h3> 
+        <h6 style="font-size:15px;line-height:20px;text-align:left">HeteroMeth is a database of cell-to-cell heretogeneity in DNA methylation based on BS-seq data.</h6>
+        <h6 style="font-size:15px;line-height:20px;text-align:left">DNA methylation is an important epigenetic mark that plays a vital role in gene
+                                                   expression and cell differentiation. Whereas the average DNA methylation level among a group
+                                                   of cells has been extensively documented, the cell-to-cell heterogeneity in DNA methylation
+                                                   remains less investigated. Here we established a gold standard of the cell-to-cell heterogeneity in
+                                                   DNA methylation. Based on that we optimized a computational pipeline for estimating the
+                                                   heterogeneity in DNA methylation from bulk BS-seq data. We further built HeteroMeth, a
+                                                   database for searching, browsing, visualizing, and downloading the heterogeneity in DNA
+                                                   methylation for a total of 141 samples in humans, mice, Arabidopsis, and rice. The optimization
+                                                    of the computational strategy and the construction of the database in this study complement the
+                                                    recent experimental attempts on single-cell DNA methylatomes and will facilitate the
+                                                    understanding of epigenetic mechanisms underlying cell differentiation and embryonic
+                                                    development.</h6>
+        <div id="main_content"></div>
+        <hr align="left" class="hrq"/>
+        <h3 style="font-size:20px">Citation</h3>
+        <p style="font-size:15px;line-height:20px">Qing Huan, Yuliang Zhang, Shaohuan Wu, Wenfeng Qian. HeterMeth: A database of Cell-to-cell heterogeneity in DNA Methylation. 
+        <em><strong>Genomics, Proteomics & Bioinformatics</strong></em>
+        </p>
+      </div>
+      <div id="content_right">
+        <h4>Accessing HeterMeth</h4>
+        <div class="item_box">
+          <h5><a class="current" href="" title="Gene Search">Gene Search</a></h5>
+          <p style="font-size:13px">After submitting a list of gene IDs, the DNA methylation level and Shannon entropy for each gene can be browsed and downloaded.</p>
+        </div>
+        <div class="item_box">
+          <h5><a href="" title="Region Browse">Genome Browse</a></h5>
+          <p style="font-size:13px">The landscapes of heterogeneity in DNA methylation are shown in the UCSC Genome Browser.</p>
+        </div>
+        <div class="item_box">
+          <h5><a href="" title="Download and browse">Browse and Download</a></h5>
+          <p style="font-size:13px">Browse and download the processed HeteroMeth data.</p>
+        </div>
+        <table width="252" border="0" style="display:''">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="item_box">
+                    <a href="https://www.revolvermaps.com/livestats/5uyucletjwy/"><img src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/0/5uyucletjwy.png" width="256" height="128" alt="Map" style="border:0;"></a>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+      <div class="spacer"></div>
+    </div>
+    <div id="footer">
+        <div style="float:left; padding-left:40px;"> Copyright 2018 &copy;<a href="http://qianlab.genetics.ac.cn/"> QianLab</a> </div>
+        <div id="madeby"></div>
+      </div>
+  </div>
+</section>
+</body>
+</html>
