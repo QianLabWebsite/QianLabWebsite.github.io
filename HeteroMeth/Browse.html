@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HeteroMeth-Home</title>
+<link rel="stylesheet" type="text/css" href="statics/indexstyle.css">
+<link rel="stylesheet" href="statics/style.css">
+<link rel="stylesheet" href="statics/prettify.css">
+<style>
+</style>
+<script type="text/javascript" src="statics/jquery-1.7.2.min.js"></script>
+<script  src="js/DynamicOptionList.js"></script>
+<script language="javascript">
+$(function(){
+var heightLeft= $("#content_left").height();
+var heightRight= $("#content_right").height();
+if (heightLeft > heightRight)
+{
+$("#content_right").height(heightLeft);
+}
+})
+</script>
+</head>
+<body>
+<header>
+<div id="headercontainer"></div>
+<p id="description">A Database of Cell-to-cell <strong><font color="#fdfd05"size="4">Hetero</font></strong>geneity in DNA <strong><font color="#fdfd05"size="4">Meth</font></strong>ylation</p>
+</header>
+<section>
+  <div id="container">
+    <div id="head">
+      <h1></h1>
+      <!--  Figure move, i will consider if we need this or not -->
+      <ul id="menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="SymbolSearch.php">Gene Search</a>
+        </li>
+        <li>
+          <a class="current" href="Browse.html">Genome Browser</a>
+        </li>
+        <li>
+          <a href="Download.php">Browse & Download</a>
+        </li>
+        <li>
+          <a href="Contact.php">Contact us</a>
+        </li>
+    </div>
+    <div id="area"></div>
+    <div id="main">
+      <div id="content_left">
+        <p id="browse_p" ></p>
+        <p id="browse_p" ></p>
+        <h3 style="font-size:18px">Heterogeneity in DNA methylation at UCSC</h3>
+        <Ap id="browse_p" ></p>
+        <p  id="browse_p" >
+              <a href='http://genome.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=qhuan%40genetics.ac.cn&hgS_otherUserSessionName=HeteroMeth_Arabidopsis' target="_blank"><i>Arabidopsis thaliana</i></a>
+        </p>
+       <p id="browse_p" >
+              <a href='rice.php' target="_blank"><i>Oryza sativa</i></a>
+       </p>
+       <p id="browse_p" >
+             <a href='http://genome.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=qhuan%40genetics.ac.cn&hgS_otherUserSessionName=HeteroMeth_Mice' target="_blank"><i>Mus musculus</i></a>
+       </p>
+       <p id="browse_p" >
+            <a href='http://genome.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=qhuan%40genetics.ac.cn&hgS_otherUserSessionName=HeteroMeth_Humans' target="_blank"><i>Homo sapiens</i></a>
+       </p>
+       <p id="browse_p" ></p>
+       <p id="browse_p" ></p>
+       <p id="browse_p" ></p>
+       <p id="browse_p" ></p>
+       <p id="browse_p" ></p>
+    </div>
+      <div id="content_right">
+        <h4>Accessing HeteroMeth</h4>
+        <div class="item_box">
+          <h5><a class="current" href="" title="Gene Search">Gene Search</a></h5>
+          <p style="font-size:13px">After submitting a list of gene IDs, the DNA methylation level and Shannon entropy for each gene can be browsed and downloaded.</p>
+        </div>
+        <div class="item_box">
+          <h5><a href="" title="Region Browse">Genome Browser</a></h5>
+          <p style="font-size:13px">The landscape of heterogeneity in DNA methylation is shown in the UCSC Genome Browser.</p>
+        </div>
+        <div class="item_box">
+          <h5><a href="" title="Download and browse">Browse and Download</a></h5>
+          <p style="font-size:13px">Browse and download the processed HeteroMeth data.</p>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+    <div id="footer">
+        <div style="float:left; padding-left:10px;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png"></a> Copyright 2018 &copy;<a href="http://qianlab.genetics.ac.cn/"> QianLab</a> </div>
+        <div id="madeby"></div>
+      </div>
+  </div>
+</section>
+</body>
+</html>
