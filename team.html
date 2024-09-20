@@ -69,6 +69,27 @@ body,td,th {
 .STYLE55 {font-size: 14px; font-style: italic; font-family: Georgia, "Times New Roman", Times, serif; }
 -->
 </style>
+<style>
+    /* 主容器样式 */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* 确保两边对齐 */
+      width: 100%;
+    }
+    
+    /* 每个图文部分的样式 */
+    .section {
+      width: 48%; /* 控制每个部分的宽度为48% */
+      margin-bottom: 20px; /* 添加每行之间的间距 */
+      text-align: left; /* 确保内容居中 */
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 10px auto; /* 图片居中 */
+    }
+</style>
 <meta name="QianLab" content="QianLab" />
 <meta name="Keywords" content="Institute of Genetics and Developmental Biology,CAS,Wenfeng Qian" />
 <meta name="Description" content="Institute of Genetics and Developmental Biology,CAS,Wenfeng Qian" />
@@ -161,7 +182,7 @@ body,td,th {
   </tr>
   <tr>
     <td height="22">&nbsp;</td>
-    <td width="33%" rowspan="7" align="center" valign="middle" bgcolor="F0EFD3"><p class="STYLE9"><a href="http://en.genetics.ac.cn/qianwenfeng "><img src="image/qian2.jpg" width="124" height="174" border="0" align="middle" /></a></p></td>
+    <td width="33%" rowspan="7" align="center" valign="middle" bgcolor="F0EFD3"><p class="STYLE9"><a href="http://en.genetics.ac.cn/qianwenfeng "><img src="image/qian2.jpg" width="198" height="275" border="0" align="middle" /></a></p></td>
     <td width="36%" rowspan="7" align="center" valign="middle" bgcolor="F0EFD3"><div align="left"><span class="STYLE9"><span class="STYLE49">Wenfeng Qian</span><br />
     <span class="STYLE45">Ph.D University of Michigan<br />
           <em>Email: wfqian (at) genetics (dot) ac (dot) cn</em></span></span></div></td>
@@ -208,120 +229,60 @@ body,td,th {
     <td class="STYLE28">&nbsp;</td>
   </tr>
 
-  <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><div align="center"><img src="image/hq.jpg" width="198" height="275" /></div></td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><div align="center" class="STYLE41">
-      <div align="left"><span class="STYLE49">Qing Huan </span><br />
-        <span class="STYLE45">Ph.D Institute of Botany, CAS </span><br />
-          <span class="STYLE45"><em>Email: qhuan (at) genetics (dot) ac (dot) cn</em></span></div>
-    </div></td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
 
+  
+<td class="STYLE28">&nbsp;</td>
+<td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
+<td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
+<td bgcolor="#F0EFD3" class="STYLE28" colspan="2">
 
-<!-- <table>
-  <tr>
-    <!-- 左侧部分 -->
-    <td style="width: 50%; vertical-align: top;">
-      <div align="left">
-        <img src="image/hq.jpg" width="124" height="174" />
-        <span class="STYLE49">Qing Huan</span><br />
-        <span class="STYLE45">Ph.D Institute of Botany, CAS</span><br />
-        <span class="STYLE45"><em>Email: qhuan (at) genetics (dot) ac (dot) cn</em></span>
-      </div>
-    </td>
-
-    <!-- 右侧部分 -->
-    <td style="width: 50%; vertical-align: top;">
-      <div align="right">
-        <img "image/Team_KeLi.JPG" alt="LiKe" width="124" height="172" />
-        <span class="STYLE49">Another Name</span><br />
-        <span class="STYLE45">Ph.D Institute of Genetics, CAS</span><br />
-        <span class="STYLE45"><em>Email: anothername (at) genetics (dot) ac (dot) cn</em></span>
-      </div>
-    </td>
-  </tr>
-</table> -->
-
-
-  <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28">&nbsp;</td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
-  <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><div align="center"><img src="image/Team_KeLi.JPG" alt="LiKe" width="124" height="172" /></div></td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><div align="left"><span class="STYLE41"><span class="STYLE49">Ke Li</span><br />
+<!-- 分成左右两部分的容器 -->
+<div class="container">
+  
+    <!-- 第一行左侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/hq.jpg" width="198" height="275" />
+      <span class="STYLE41"><span class="STYLE49">Qing Huan</span><br />
+      <span class="STYLE45">Ph.D Institute of Botany, CAS</span><br />
+      <span class="STYLE45"><em>Email: qhuan (at) genetics (dot) ac (dot) cn</em></span>
+    </div>
+  </div>
+  
+    
+    <!-- 第一行右侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/Team_KeLi.JPG" alt="LiKe" width="198" height="275"/>
+	  <span class="STYLE41"><span class="STYLE49">Ke Li</span><br />
       <span class="STYLE45">Ph.D Institute of Genetics and Developmental Biology, CAS</span><br />
-        <span class="STYLE47">Email: like (at) genetics (dot) ac (dot) cn</span></span></div></td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
-    <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td colspan="2" bgcolor="#F0EFD3" class="STYLE28">&nbsp;</td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
- 
-   <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><div align="center"><img src="image/Team_Mayuxin.jpg" alt="Ma yuxin" width="124" height="180" /></div></td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><span class="STYLE41"><span class="STYLE49">Yuxin Ma </span> <span class="STYLE53"></span><br />
-    </span><span class="STYLE54"> Ph.D. University of Bordeaux/INRA</span><span class="STYLE41"><br />
-    <span class="STYLE47">Email</span></span><span class="STYLE47">: <span class="STYLE55">yxma (at) genetics (dot) ac (dot) cn</span></span></td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
-  <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28">&nbsp;</td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
+      <span class="STYLE45"><em>Email: like (at) genetics (dot) ac (dot) cn</em></span>
+    </div>
+  </div>
 
+    <!-- 第二行左侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/Team_Mayuxin.png" alt="Ma yuxin" width="198" height="275" />
+      <span class="STYLE41"><span class="STYLE49">Yuxin Ma</span><br />
+      <span class="STYLE45">Ph.D. University of Bordeaux/INRA</span><br />
+      <span class="STYLE45"><em>Email: yxma (at) genetics (dot) ac (dot) cn</em></span>
+    </div>
+  </div>
+  
+    
+    <!-- 第二行右侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/Team_LiuYang-2.jpg" alt="Yang Liu" width="198" height="275"/>
+      <span class="STYLE41"><span class="STYLE49">Yang Liu </span><br />
+      <span class="STYLE45">Ph.D China Agricultural University</span><br />
+      <span class="STYLE45"><em>Email: liuyang0503 (at) genetics (dot) ac (dot) cn</em></span>
+    </div>
+  </div>
 
-
-  <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><div align="center"><img src="image/Team_LiuYang.jpg" alt="Yang Liu" width="124" height="176" /></div></td>
-    <td bgcolor="#F0EFD3" class="STYLE28"><span class="STYLE41"><span class="STYLE49">Yang Liu </span> <span class="STYLE53"></span><br />
-    </span><span class="STYLE54"> Ph.D China Agricultural University</span><span class="STYLE41"><br />
-    <span class="STYLE47">Email</span></span><span class="STYLE47">: <span class="STYLE55">yliu (at) genetics (dot) ac (dot) cn</span></span></td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
-
-
- <tr>
-    <td class="STYLE28">&nbsp;</td>
-    <td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28">&nbsp;</td>
-    <td bgcolor="#F0EFD3" class="STYLE28">&nbsp;</td>
-    <td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
-    <td class="STYLE28">&nbsp;</td>
-  </tr>
+<td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
+<td class="STYLE28">&nbsp;</td>
 <!--
  <tr>
     <td class="STYLE28">&nbsp;</td>
@@ -366,6 +327,60 @@ body,td,th {
 		<td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
 		<td class="STYLE28">&nbsp;</td>
 	</tr>
+
+<td class="STYLE28">&nbsp;</td>
+<td background="image/ll.jpg" bgcolor="FFFED2" class="STYLE28">&nbsp;</td>
+<td bgcolor="#FFFFE3" class="STYLE28">&nbsp;</td>
+<td bgcolor="#F0EFD3" class="STYLE28" colspan="2">
+
+<!-- 分成左右两部分的容器 -->
+<div class="container">
+  
+    <!-- 第一行左侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/Team-ShuoZhang.jpg" alt="Shuo Zhang" width="198" height="275" />
+	  <span class="STYLE41"><span class="STYLE49">Shuo Zhang </span> <span class="STYLE53">(2018~ )</span><br />
+      <span class="STYLE45"> Graduate Student</span><span class="STYLE41"><br />
+      <span class="STYLE45"><em>Email: 569349169(at)qq(dot)com</em></span><br />
+
+    </div>
+  </div>
+  
+    
+    <!-- 第一行右侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/Team_Guohaotian1.jpg" alt="Haotian Guo" width="198" height="275"/>
+      <span class="STYLE41"><span class="STYLE49">Haotian Guo </span> <span class="STYLE53">(2021~ )</span><br />
+      <span class="STYLE45"> Graduate Student</span><span class="STYLE41"><br />
+      <span class="STYLE45"><em>Email: htguo(at)genetics(dot)ac(dot)cn</em></span><br />
+    </div>
+  </div>
+
+    <!-- 第二行左侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/Team-weiguang.jpg" alt="Weiguang Wang" width="198" height="275"/>
+      <span class="STYLE41"><span class="STYLE49">Weiguang Wang </span> <span class="STYLE53">(2021~ )</span><br />
+      <span class="STYLE45"> Graduate Student</span><span class="STYLE41"><br />
+      <span class="STYLE45"><em>Email: seaxingzhou(at)163(dot)com</em></span><br />
+    </div>
+  </div>
+  
+    
+    <!-- 第二行右侧部分 -->
+    <div class="section">
+    <div>
+      <img src="image/Team_Gaolu.jpg" alt="Lu Gao" width="198" height="275"/>
+      <span class="STYLE41"><span class="STYLE49">Lu Gao </span> <span class="STYLE53">(2021~ )</span><br />
+      <span class="STYLE45"> Graduate Student</span><span class="STYLE41"><br />
+      <span class="STYLE45"><em>Email: lgao(at)genetics(dot)ac(dot)cn</em></span><br />
+    </div>
+  </div>
+
+<td background="image/bg2.jpg" class="STYLE28">&nbsp;</td>
+<td class="STYLE28">&nbsp;</td>
 
 
 <tr>
